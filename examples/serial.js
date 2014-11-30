@@ -25,6 +25,7 @@ if (!module.parent) {
         .operate({op: 10 }, function (err, results) {
           console.log("OK!??!", arguments);
         })
+        /*
         .operate({op: 49}, function (err, results) {
           console.log("HARDWARE ID", arguments);
         })
@@ -34,6 +35,10 @@ if (!module.parent) {
         .operate({op: 54}, function (err, results) {
           console.log("FIRMWARE SETTINGS", results.data.toString( ));
         })
+        */
+        .ping(console.log.bind(console, 'PING'))
+        .readFirmwareSettings(console.log.bind(console, 'readFirmwareSettings'))
+        .readFirmwareHeader(console.log.bind(console, 'readFirmwareHeader'))
         ;
       });
     } else {
