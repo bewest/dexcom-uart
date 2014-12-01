@@ -3,6 +3,8 @@ var scan = require('../utils/scan');
 var messages = require('../lib/messages');
 var machine = require('../lib/');
 var binary = require('binary');
+var SegfaultHandler = require('segfault-handler');
+SegfaultHandler.registerHandler( );
 
 if (!module.parent) {
   scan(function (err, list) {
@@ -39,8 +41,9 @@ if (!module.parent) {
         .ping(console.log.bind(console, 'PING'))
         .readFirmwareSettings(console.log.bind(console, 'readFirmwareSettings'))
         .readFirmwareHeader(console.log.bind(console, 'readFirmwareHeader'))
+        .close( );
         ;
-      });
+      })
     } else {
       console.log('Quiting, found', list);
     }
