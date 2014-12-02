@@ -15,6 +15,7 @@
     "binary": "~0.3.0"
   },
   "devDependencies": {
-    "serialport": "~1.4.6"
+    "serialport": "~1.4.6",
+    "segfault-handler": "~0.2.4"
   }
 }
