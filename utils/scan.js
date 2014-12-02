@@ -3,7 +3,7 @@ var Serial = require('serialport');
 
 function scan (pattern, cb) {
   if (!cb) { cb = pattern; pattern = 'DexCom_Gen4_USB'; }
-  var opt = {baudRate: 115200};
+  var opt = {baudRate: 9600};
   Serial.list(scanned);
   function scanned (err, list) {
     var candidates = list.map(function (el) {

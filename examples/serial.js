@@ -41,6 +41,14 @@ if (!module.parent) {
         .ping(console.log.bind(console, 'PING'))
         .readFirmwareSettings(console.log.bind(console, 'readFirmwareSettings'))
         .readFirmwareHeader(console.log.bind(console, 'readFirmwareHeader'))
+        .ReadDatabasePartitions(console.log.bind(console, 'ReadDatabasePartitions'))
+        .ReadDatabasePageRange({type: 4 }, console.log.bind(console, 'PageRange'))
+        /*
+        .getSensorPageRange(console.log.bind(console, 'Sensor pages'))
+        .getEGVPageRange(console.log.bind(console, 'EGV pages'))
+        .getReceiverLogPageRange(console.log.bind(console, 'Receiver Log pages'))
+        */
+        .readEGVPage(515, console.log.bind(console, 'EGV HISTORY'))
         .close( );
         ;
       })
