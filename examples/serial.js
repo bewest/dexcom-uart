@@ -45,10 +45,10 @@ if (!module.parent) {
         .ReadDatabasePageRange({type: 4 }, console.log.bind(console, 'PageRange'))
         /*
         .getSensorPageRange(console.log.bind(console, 'Sensor pages'))
-        .getEGVPageRange(console.log.bind(console, 'EGV pages'))
         .getReceiverLogPageRange(console.log.bind(console, 'Receiver Log pages'))
         */
-        .readEGVPage(515, console.log.bind(console, 'EGV HISTORY'))
+        .getEGVPageRange(console.log.bind(console, 'EGV pages'))
+        .readEGVPage(516, console.log.bind(console, 'EGV HISTORY'))
         .close( );
         ;
       })
