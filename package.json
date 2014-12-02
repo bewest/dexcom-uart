@@ -17,5 +17,24 @@
   "devDependencies": {
     "serialport": "~1.4.6",
     "segfault-handler": "~0.2.4"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bewest/dexcom-uart.git"
+  },
+  "keywords": [
+    "dexcom",
+    "serial",
+    "binary",
+    "protocol",
+    "g4",
+    "glucose",
+    "cgm"
+  ],
+  "bugs": {
+    "url": "https://github.com/bewest/dexcom-uart/issues"
   }
 }
