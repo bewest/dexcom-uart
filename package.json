@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "serialport": "~1.4.6",
-    "segfault-handler": "~0.2.4"
+    "segfault-handler": "~0.2.4",
+    "mocha": "~2.0.1",
+    "should": "~4.3.0"
   },
   "directories": {
     "example": "examples"
