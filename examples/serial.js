@@ -48,7 +48,7 @@ if (!module.parent) {
         .getReceiverLogPageRange(console.log.bind(console, 'Receiver Log pages'))
         */
         .getEGVPageRange(console.log.bind(console, 'EGV pages'))
-        .readEGVPage(516, console.log.bind(console, 'EGV HISTORY'))
+        .readEGVPage(538, console.log.bind(console, 'EGV HISTORY'))
         .close( );
         ;
       })
