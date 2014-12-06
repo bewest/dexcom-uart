@@ -12,7 +12,8 @@
     "put": "0.0.6",
     "crc": "~3.2.1",
     "event-stream": "~3.1.7",
-    "binary": "~0.3.0"
+    "binary": "~0.3.0",
+    "chainsaw": "~0.1.0"
   },
   "devDependencies": {
     "serialport": "~1.4.6",
