@@ -49,6 +49,13 @@ if (!module.parent) {
         */
         .getEGVPageRange(console.log.bind(console, 'EGV pages'))
         .readEGVPage(538, console.log.bind(console, 'EGV HISTORY'))
+        .readManufacturingData(0, console.log.bind(console, 'MANUFACTURING DATA 111'))
+        .readFirmwareParameterData(0, console.log.bind(console, 'FirmwareParameterData'))
+        .readPCParameterData(0, console.log.bind(console, 'PCParameterData'))
+        .readSensorDataPageRange(function with_pages (err, range) {
+          console.log('SENSOR PAGE RANGE', range.start, range.end);
+          this.readSensorData(range.start, console.log.bind(console, 'SENSOR PAGE'))
+        })
         .close( );
         ;
       })
