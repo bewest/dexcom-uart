@@ -47,8 +47,9 @@ if (!module.parent) {
         .getSensorPageRange(console.log.bind(console, 'Sensor pages'))
         .getReceiverLogPageRange(console.log.bind(console, 'Receiver Log pages'))
         */
-        .getEGVPageRange(console.log.bind(console, 'EGV pages'))
-        .readEGVPage(538, console.log.bind(console, 'EGV HISTORY'))
+        .getEGVPageRange(function with_pages (err, range) {
+          this.readEGVPage(range.start, console.log.bind(console, 'EGV HISTORY'))
+        })
         .readManufacturingData(0, console.log.bind(console, 'MANUFACTURING DATA 111'))
         .readFirmwareParameterData(0, console.log.bind(console, 'FirmwareParameterData'))
         .readPCParameterData(0, console.log.bind(console, 'PCParameterData'))
